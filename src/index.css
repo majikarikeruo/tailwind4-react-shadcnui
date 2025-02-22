@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Plugins */
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@plugin "tailwindcss-animate";
+
+/* Class based dark mode */
+@variant dark (&:where(.dark, .dark *));
